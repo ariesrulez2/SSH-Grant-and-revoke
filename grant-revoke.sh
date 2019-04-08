@@ -19,5 +19,5 @@ SSH_PUBLIC_KEY=`sudo su "$User1" -c "ssh-keygen -b 4096 -t rsa -f /tmp/id_rsa1 -
 #usermod -a -G wheel $User1
 
 # add the ssh public key
-ssh 10.1.1.32 -c "echo $SSH_PUBLIC_KEY >> .ssh/authorised_keys"
+ssh 0.0.0.0 -c "echo $SSH_PUBLIC_KEY >> .ssh/authorised_keys"
 
